@@ -1,0 +1,86 @@
+import { Orchestration } from './Orchestration';
+import { Instrument } from './Instrument';
+
+export type OrchestrationBook = {
+  id: string;
+  playOrchestrationId: string;
+  bookName: string;
+  bookLabel?: OrchestrationBookLabel;
+  createdAt: Date;
+  updatedAt: Date;
+  orchestration?: Orchestration;
+  instruments?: Instrument[];
+};
+
+export enum OrchestrationBookLabel {
+  violin = 'Violin',
+  violins = 'Violins',
+  violin1 = 'Violin 1',
+  violin2 = 'Violin 2',
+  viola = 'Viola',
+  violas = 'Violas',
+  cello = 'Cello',
+  cellos = 'Cellos',
+  cello1 = 'Cello 1',
+  cello2 = 'Cello 2',
+  bass = 'Bass',
+  electricBass = 'Electric Bass',
+  stringBass = 'String Bass',
+  reed1 = 'Reed 1',
+  reed2 = 'Reed 2',
+  reed3 = 'Reed 3',
+  reed4 = 'Reed 4',
+  reeds = 'Reeds',
+  flute = 'Flute',
+  flutes = 'Flutes',
+  clarinet = 'Clarinet',
+  clarinets = 'Clarinets',
+  oboe = 'Oboe',
+  bassClarinet = 'Bass Clarinet',
+  saxophone = 'Saxophone',
+  altoSaxophone = 'Alto Saxophone',
+  tenorSaxophone = 'Tenor Saxophone',
+  baritoneSaxophone = 'Baritone Saxophone',
+  horn = 'Horn',
+  hghorns = 'Horns',
+  trumpet = 'Trumpet',
+  trumpets = 'Trumpets',
+  trumpet1 = 'Trumpet 1',
+  trumpet2 = 'Trumpet 2',
+  trumpet3 = 'Trumpet 3',
+  trombone = 'Trombone',
+  trombones = 'Trombones',
+  trombone1 = 'Trombone 1',
+  trombone2 = 'Trombone 2',
+  tube = 'Tuba',
+  pianoConductor = 'Piano/Conductor',
+  pianoVocal = 'Piano/Vocal',
+  piano = 'Piano',
+  keyboards = 'Keyboards',
+  keyboardConductor = 'Keyboard/Conductor',
+  keyboard1 = 'Keyboard 1',
+  keyboard2 = 'Keyboard 2',
+  keyboard3 = 'Keyboard 3',
+  keyboard4 = 'Keyboard 4',
+  guitar = 'Guitar',
+  guitars = 'Guitars',
+  acousticGuitar = 'Acoustic Guitar',
+  electricGuitar = 'Electric Guitar',
+  guitar1 = 'Guitar 1',
+  guitar2 = 'Guitar 2',
+  guitar3 = 'Guitar 3',
+  bassGuitar = 'Bass Guitar',
+  tenorGuitar = 'Tenor Guitar',
+  ukulele = 'Ukulele',
+  mandolin = 'Mandolin',
+  fiddle = 'Fiddle',
+  banjo = 'Banjo',
+  percussion = 'Percussion',
+  percussion1 = 'Percussion 1',
+  percussion2 = 'Percussion 2',
+  drums = 'Drums',
+  drumset = 'Drumset',
+  mallets = 'Mallets',
+  harp = 'Harp',
+  accordion = 'Accordion',
+}

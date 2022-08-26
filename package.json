@@ -1,0 +1,93 @@
+{
+  "name": "spectra-admin",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@hookform/resolvers": "^2.9.5",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/lab": "^5.0.0-alpha.89",
+    "@mui/material": "^5.8.7",
+    "@mui/styles": "^5.8.7",
+    "@mui/x-date-pickers": "^5.0.0-beta.0",
+    "@types/react-table": "^7.7.12",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "aws-jwt-verify": "^3.1.0",
+    "axios": "^0.27.2",
+    "date-fns": "^2.28.0",
+    "eslint": "^8.19.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "jwt-decode": "^3.1.2",
+    "moment": "^2.29.4",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-cookie": "^4.1.1",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.2",
+    "react-hook-form": "^7.33.1",
+    "react-moment": "^1.1.2",
+    "react-query": "4.0.0-beta.23",
+    "react-router-dom": "6.3.0",
+    "react-scripts": "5.0.1",
+    "react-table": "^7.8.0",
+    "typescript": "^4.7.4",
+    "universal-cookie": "^4.0.4",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^14.2.1",
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-react": "^7.30.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint 'src/*.tsx' 'src/**/**.ts'",
+    "lint:fix": "eslint --fix 'src/**/**.tsx' 'src/**/**.ts'",
+    "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
+    "prepare": "husky install",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css,scss,less}": [
+      "prettier --ignore-path ./.prettierignore --write "
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

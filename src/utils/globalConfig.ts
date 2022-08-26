@@ -1,0 +1,28 @@
+export enum GlobalMessages {
+  errorMsg = 'Something went wrong... Please try after sometime',
+  loadingMsg = 'Loading.. Please wait!',
+  successMsg = 'Awesome!! Data updated successfully',
+  playCreationSuccessMsg = 'Play created successfully',
+  playUpdationSuccessMsg = 'Play updated successfully',
+  addBrandSuccessMsg = 'Brands added successfully',
+  addArtistSuccessMsg = 'Artists added successfully',
+  updateArtistSuccessMsg = 'Artists updated successfully',
+  deleteArtistsMsg = 'Artists Deleted successfully',
+  updatedAddProgramSuccessMsg = 'Program updated successfully',
+  addProgramSuccessMsg = 'Program added successfully',
+  deleteProgramSuccessMsg = 'Program deleted successfully',
+  addInstitutionSuccessMsg = 'Institution added successfully',
+  updateInstitutionSuccessMsg = 'Institution updated successfully',
+  deleteInstitutionSuccessMsg = 'Institution deleted successfully',
+  addStudioSuccessMsg = 'Studio added successfully',
+  updateStudioSuccessMsg = 'Studio updated successfully',
+  deleteStudioSuccessMsg = 'Studio deleted successfully',
+  addProductionSuccessMsg = 'Production added successfully',
+  updateProductionSuccessMsg = 'Production updated successfully',
+  deleteProductionSuccessMsg = 'Production deleted successfully',
+  addVenueSuccessMsg = 'Venue added successfully',
+  updateVenueSuccessMsg = 'Venue updated successfully',
+  deleteVenueSuccessMsg = 'Venue deleted successfully',
+}
+
+export const alertAutoHideDuration = 3000;
