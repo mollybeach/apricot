@@ -1,4 +1,4 @@
-# Spectra Admin App
+# Apricot Admin App
 
 This project is created using Create React App CLI
 
