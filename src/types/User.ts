@@ -7,9 +7,9 @@ export type User = {
 };
 
 export enum Role {
-  spectraUser = 'spectra:user',
-  studioMember = 'spectra:studio:member',
-  studioManager = 'spectra:studio:manager',
-  studioAdmin = 'spectra:studio:admin',
-  spectraOperator = 'spectra:operator',
+  apricotUser = 'apricot:user',
+  studioMember = 'apricot:studio:member',
+  studioManager = 'apricot:studio:manager',
+  studioAdmin = 'apricot:studio:admin',
+  apricotOperator = 'apricot:operator',
 }

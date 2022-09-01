@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Apricot Admin App
+=======
+# apricot Admin App
+>>>>>>> 4afc295 (small fixes)
 
 This project is created using Create React App CLI
 

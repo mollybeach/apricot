@@ -50,7 +50,7 @@ export default function Header() {
         protectedRoutes={protectedRoutes}
         create={
           isAuthenticated &&
-          [Role.spectraOperator, Role.studioAdmin, Role.studioMember].includes(
+          [Role.apricotOperator, Role.studioAdmin, Role.studioMember].includes(
             user?.primaryRole,
           )
         }

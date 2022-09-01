@@ -62,7 +62,7 @@ export default function VenuesView() {
           tableName="Venues"
           route="venues"
           requiredEditScopes={[
-            Role.spectraOperator,
+            Role.apricotOperator,
             Role.studioAdmin,
             Role.studioManager,
           ]}

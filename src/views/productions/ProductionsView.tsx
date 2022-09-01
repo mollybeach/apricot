@@ -61,7 +61,7 @@ export default function ProductionsView() {
           tableName="Productions"
           route="productions"
           requiredEditScopes={[
-            Role.spectraOperator,
+            Role.apricotOperator,
             Role.studioAdmin,
             Role.studioManager,
           ]}

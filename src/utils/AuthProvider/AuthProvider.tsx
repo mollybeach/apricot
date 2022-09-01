@@ -10,7 +10,7 @@ import {
   SetupAccountBody,
   CookieKeys,
   GrantType,
-  SpectraIdTokenPayload,
+  apricotIdTokenPayload,
 } from './auth.types';
 import {
   useLoginRequest,
@@ -85,8 +85,8 @@ export default function AuthProvider(props: any) {
 
   const setRefsAndCookies = (data: AuthenticationResponse) => {
     if (data.idToken) {
-      const idTokenData: SpectraIdTokenPayload =
-        jwtDecode<SpectraIdTokenPayload>(data.idToken);
+      const idTokenData: apricotIdTokenPayload =
+        jwtDecode<apricotIdTokenPayload>(data.idToken);
 
       userRef.current = {
         email: idTokenData.email as string,
@@ -94,7 +94,7 @@ export default function AuthProvider(props: any) {
       };
       userRef.current.primaryRole = idTokenData['cognito:groups'][0] as Role;
       userRef.current.isOperator =
-        userRef.current.primaryRole === Role.spectraOperator;
+        userRef.current.primaryRole === Role.apricotOperator;
     }
     accessTokenRef.current = data.accessToken;
     expiresInRef.current = data.expiresIn;

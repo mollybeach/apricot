@@ -12,7 +12,7 @@ export enum GrantType {
   ChallengeNewPassword = 'NEW_PASSWORD_REQUIRED',
 }
 
-export interface SpectraIdTokenPayload extends CognitoIdTokenPayload {
+export interface apricotIdTokenPayload extends CognitoIdTokenPayload {
   name: string;
   email: string;
   ['custom:studioId']: string;

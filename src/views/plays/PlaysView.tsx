@@ -55,7 +55,7 @@ export default function PlaysView() {
           tableName="Plays"
           route="plays"
           enableSearch={false}
-          requiredEditScopes={[Role.spectraOperator]}
+          requiredEditScopes={[Role.apricotOperator]}
         />
       </Box>
     </>

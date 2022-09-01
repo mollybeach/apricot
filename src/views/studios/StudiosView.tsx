@@ -81,7 +81,7 @@ export default function StudiosView() {
           route="studios"
           enableSearch={false}
           requiredEditScopes={[
-            Role.spectraOperator,
+            Role.apricotOperator,
             Role.studioAdmin,
             Role.studioManager,
           ]}

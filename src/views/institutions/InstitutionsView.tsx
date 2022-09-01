@@ -65,7 +65,7 @@ export default function InstitutionsView() {
           route="institutions"
           enableSearch={false}
           requiredEditScopes={[
-            Role.spectraOperator,
+            Role.apricotOperator,
             Role.studioAdmin,
             Role.studioManager,
           ]}
